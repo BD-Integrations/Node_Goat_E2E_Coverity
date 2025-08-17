@@ -10,7 +10,7 @@ jobs:
     runs-on: [sh_mac_mdn]  # Specify the runner to execute the job
     steps:  # List of steps to execute in this job
       - name: Checkout Source  # Step to check out the repository code
-        uses: actions/checkout@v3  # Use the checkout action to clone the repo
+        uses: actions/checkout@v4 # Use the checkout action to clone the repo
       - name: Black Duck Coverity Scan  # Step for running a full CNC Scan
         uses: blackduck-inc/black-duck-security-scan@v2  # Use the Black Duck security scan action
         with:
